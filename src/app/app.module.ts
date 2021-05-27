@@ -13,6 +13,8 @@ import { LoginComponent } from './login/login.component';
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { CardComponent } from './card/card.component';
+import { DetalleComponent } from './detalle/detalle.component';
 
 
 
@@ -44,7 +46,9 @@ const appRoute:Route[]=[
     AboutComponent,
     LoginComponent,
     NavbarComponent,
-    CarouselComponent
+    CarouselComponent,
+    CardComponent,
+    DetalleComponent
   ],
   imports: [
     BrowserModule,

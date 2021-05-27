@@ -1,20 +1,20 @@
 <nav class="navbar navbar-expand-lg  navbarColor">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">LOGO</a>
+      <a class="textNavBar navbar-brand" href="#">LOGO</a>
       <button class="navbar-toggler" type="button"  (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"  aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapseExample" [ngbCollapse]="isCollapsed">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+            <a class="nav-link active textNavBar" aria-current="page" routerLink="/home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/about">About</a>
+            <a class="nav-link active textNavBar" aria-current="page" routerLink="/about">About</a>
           </li>
         </ul>
         <form class="d-flex">
-          <button class="btn btn-outline-success" type="submit" routerLink="/login">Iniciar sesión</button>
+          <button class="btn btn-outline-success textNavBar" type="submit" routerLink="/login">Iniciar sesión</button>
         </form>
       </div>
     </div>
