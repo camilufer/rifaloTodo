@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 
@@ -42,7 +43,8 @@ const appRoute:Route[]=[
     HomeComponent,
     AboutComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

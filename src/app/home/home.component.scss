@@ -1,0 +1,24 @@
+.welcomeMsj{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.contButton{
+    margin-top: 40px;
+    text-align: center;
+    button{
+        font-size: 30px;
+        font-weight: bolder;
+    }
+}
+
+
+.btn{
+    animation: bounce;
+    animation-duration: 2s;
+    --animate-infinite: infinite;
+}
+

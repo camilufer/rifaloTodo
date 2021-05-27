@@ -1,0 +1,39 @@
+<!-- <ngb-carousel>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="./../../assets/img/img1.jpg" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>First slide label</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div> 
+    </ng-template>
+    <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img src="./../../assets/img/img2.jpg" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div> 
+      </ng-template>
+</ngb-carousel>
+
+-->
+
+   
+        <ngb-carousel>
+            <ng-template *ngFor="let pelicula of peliculas" ngbSlide>
+              <div class="contenedor-img picsum-img-wrapper">
+                <img class="center-block imgCarousel" src="{{pelicula.img}}" alt="Random first slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>{{pelicula.name}}</h3>
+                <p>{{pelicula.desc}}</p>
+              </div>
+            </ng-template>
+        </ngb-carousel>
+        
+  
+
+
