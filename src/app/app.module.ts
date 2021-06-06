@@ -15,6 +15,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CardComponent } from './card/card.component';
 import { DetalleComponent } from './detalle/detalle.component';
+import { FooterComponent } from './footer/footer.component';
+import { PreguntasComponent } from './preguntas/preguntas.component';
 
 
 
@@ -33,6 +35,10 @@ const appRoute:Route[]=[
     component:LoginComponent
   },
   {
+    path:'preguntas',
+    component:PreguntasComponent
+  },
+  {
     path:'',
     redirectTo: 'home',
     pathMatch: 'full'
@@ -48,7 +54,9 @@ const appRoute:Route[]=[
     NavbarComponent,
     CarouselComponent,
     CardComponent,
-    DetalleComponent
+    DetalleComponent,
+    FooterComponent,
+    PreguntasComponent
   ],
   imports: [
     BrowserModule,
