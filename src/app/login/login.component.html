@@ -1,17 +1,56 @@
 <app-navbar></app-navbar>
-<div class="container text-center">
-    <h1>Inicio de sesión</h1>
-    <hr>
-    <div class="row">
-        <div class="col-12">
-            <form action="" class="formRegistro">
-                <input class="form-control m-3" type="text" placeholder="Rut" id="rut" required>
-                <input class="form-control m-3" type="text" placeholder="Usuario" id="user" required>
-                <input class="form-control m-3" type="password" placeholder="Contraseña" id="pass" required>
-                <input class="btn btn-primary m-2" type="submit" value="Ingresar">
-                <input class="btn btn-secondary m-2" type="reset" value="Limpiar">
-            </form>
+<section>
+    <div class="container">
+        <div class="d-flex justify-content-center h-100 m-top">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Iniciar sesión</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <span><i class="fab fa-facebook-square"></i></span>
+                        <span><i class="fab fa-google-plus-square"></i></span>
+                        <span><i class="fab fa-twitter-square"></i></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="contactForm" (ngSubmit)="onSaveForm()">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" formControlName="name" placeholder="Nombre de usuario">
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                            </div>
+                            <input type="text" class="form-control" formControlName="email" placeholder="E-mail">
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="text" class="form-control" formControlName="password" placeholder="Contraseña">
+                        </div>
+                        <div class="row align-items-center remember">
+                            <input type="checkbox">Recuerdame
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Login" class="btn float-right login_btn">
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-center links">
+                        No tienes una cuenta?<a href="#">Registrate</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#">Olvidaste tu contraseña?</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
+
+    
 <app-footer></app-footer>
