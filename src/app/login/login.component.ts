@@ -30,12 +30,7 @@ export class LoginComponent implements OnInit {
 
   onSaveForm(){
     console.log('Saved');
-    const newContact= {
-      name: 'cami',
-      email:'camilu.fer21@gmail.com',
-      password: '12345'
-    }
-    this.dbData.saveMessage(newContact);
+    this.dbData.saveMessage(this.contactForm.value);
     
   }
 

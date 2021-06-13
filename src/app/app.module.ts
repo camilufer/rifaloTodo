@@ -21,6 +21,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { DataDbService } from './services/data-db.service';
+import { SinginComponent } from './singin/singin.component';
 
 
 
@@ -43,6 +44,10 @@ const appRoute:Route[]=[
     component:PreguntasComponent
   },
   {
+    path:'singin',
+    component:SinginComponent
+  },
+  {
     path:'',
     redirectTo: 'home',
     pathMatch: 'full'
@@ -60,7 +65,8 @@ const appRoute:Route[]=[
     CardComponent,
     DetalleComponent,
     FooterComponent,
-    PreguntasComponent
+    PreguntasComponent,
+    SinginComponent
   ],
   imports: [
     BrowserModule,
