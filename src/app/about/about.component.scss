@@ -1,10 +1,31 @@
 .aboutBg{
     background-color: #cbcbcb;
 }
-.tituloAboutBg{
-    background-color: #36aea5;
-}
+
 div{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.preguntasBg{
+    padding-top: 70px;
+    padding-bottom: 40px;
+    background:rgba(0, 0, 0, 0.6);
+}
+
+.p-top{
+    padding-top: 150px;
+   }
+
+.txt-white, h2, h1{
+    color:#FFF;
+}
+
+p{
+    color: #198754;
+}
+
+.img-fluid{
+    width: 500px;
+    
 }
