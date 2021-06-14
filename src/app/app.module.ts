@@ -22,6 +22,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { DataDbService } from './services/data-db.service';
 import { SinginComponent } from './singin/singin.component';
+import { DetalleRifaComponent } from './detalle-rifa/detalle-rifa.component';
 
 
 
@@ -48,6 +49,10 @@ const appRoute:Route[]=[
     component:SinginComponent
   },
   {
+    path:'detalle-rifa',
+    component:DetalleRifaComponent
+  },
+  {
     path:'',
     redirectTo: 'home',
     pathMatch: 'full'
@@ -66,7 +71,8 @@ const appRoute:Route[]=[
     DetalleComponent,
     FooterComponent,
     PreguntasComponent,
-    SinginComponent
+    SinginComponent,
+    DetalleRifaComponent
   ],
   imports: [
     BrowserModule,

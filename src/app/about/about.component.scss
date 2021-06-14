@@ -1,5 +1,5 @@
 .aboutBg{
-    background-color: #cbcbcb;
+    background-color: #fff;
 }
 .tituloAboutBg{
     background-color: #36aea5;
@@ -7,4 +7,10 @@
 div{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+.texto-fondo, h1{
+    color: #fff;
+}
+.texto-fondo h2 h1{
+    text-align: center;
 }
