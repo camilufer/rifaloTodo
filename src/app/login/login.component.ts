@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { DataDbService } from '../services/data-db.service';
 import { FormControl, FormGroup } from '@angular/forms';
+import { NavbarComponent } from '../navbar/navbar.component';
+import { Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-login',
@@ -33,5 +36,7 @@ export class LoginComponent implements OnInit {
     this.dbData.saveMessage(this.contactForm.value);
     
   }
+
+ 
 
 }

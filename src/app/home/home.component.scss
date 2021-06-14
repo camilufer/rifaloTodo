@@ -1,5 +1,9 @@
+*{
+    font-family: 'Signika Negative', sans-serif;
+}
+
 .welcomeMsj{
-    margin-top: 40px;
+    
     text-align: center;
     font-size: 30px;
     font-weight: bolder;
@@ -20,5 +24,15 @@
     animation: bounce;
     animation-duration: 2s;
     --animate-infinite: infinite;
+}
+
+.bgTransparent {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background:rgba(0, 0, 0, 0.6);
+}
+
+.textWhite{
+    color:#fff;
 }
 
