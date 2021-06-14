@@ -1,16 +1,39 @@
 .aboutBg{
     background-color: #fff;
 }
-.tituloAboutBg{
-    background-color: #36aea5;
-}
+
 div{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+<<<<<<< HEAD
 .texto-fondo, h1{
     color: #fff;
 }
 .texto-fondo h2 h1{
     text-align: center;
+=======
+
+.preguntasBg{
+    padding-top: 70px;
+    padding-bottom: 40px;
+    background:rgba(0, 0, 0, 0.6);
+}
+
+.p-top{
+    padding-top: 150px;
+   }
+
+.txt-white, h2, h1{
+    color:#FFF;
+}
+
+p{
+    color: #198754;
+}
+
+.img-fluid{
+    width: 500px;
+    
+>>>>>>> 8cef917569d967b80db0b8098d754db636014f02
 }
