@@ -16,11 +16,12 @@ section{
     }
     
     .card{
-    height: 370px;
+    height: 400px;
     margin-top: auto;
     margin-bottom: auto;
     width: 400px;
     background-color: rgba(0,0,0,0.5) !important;
+    padding-bottom: 20px;
     }
     
     .social_icon span{
@@ -90,4 +91,8 @@ section{
 
     a{
         color:#198754;
+    }
+
+    .card-header h3{
+        margin-top: 40px;
     }
