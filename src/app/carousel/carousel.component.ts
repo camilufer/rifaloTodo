@@ -10,18 +10,23 @@ export class CarouselComponent implements OnInit {
 
   imagenes:any[]=[
     { name:'',
-      img:'./assets/img/imgSlider3.png',
+      img:'./assets/img/imgSlider5.jpg',
     }, 
     {
       name:'',
-      img:'./assets/img/imgSlider4.jpg',
+      img:'./assets/img/imgSlider7.jpg',
+      desc:''
+    },
+    {
+      name:'',
+      img:'./assets/img/imgSlider6.jpg',
       desc:''
     }
   ];
 
 
   constructor(private _config:NgbCarouselConfig) { 
-    _config.interval = 6000;
+    _config.interval = 5000;
     _config.pauseOnHover = true;
     _config.showNavigationArrows = false;
 
