@@ -1,23 +1,102 @@
-.footerBgColor{
-    background-color: #222222;
+.fondo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #292929
 }
-.textFooterColor{
-    color: #FFFCFF !important;
-}
-.copyrightBg{
-    background-color: #000;
-}
-.copyright{
-    width: 100% !important;
-}
-.padd{
-    padding:20px;
+.fondo2 {
+    height: 50px;
+    background-color: black;
+    top: -15px
 }
 
-p{
-    margin-bottom: 0;
+
+#sitelink {
+    font-size: 35px;
+    color: #FFC312;
 }
 
-.sM{
-    margin-top: 10px;
+#sitelink:hover {
+    color: #fff;
 }
+
+
+.txt {
+    color: white;
+    font-size: 20px
+}
+
+.txt2 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.link {
+    display: flex;
+    width: 130px;
+    height: 40px;
+    color: #aaa7a7;
+    background-color: transparent;
+    border-top: 2px solid white;
+    position: relative;
+    top: -10px
+}
+
+.link:hover,
+.link1:hover {
+    color: #e65100
+}
+
+.text {
+    color: #aaa7a7;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.link1 {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    color: #aaa7a7;
+    background-color: transparent;
+    border-top: 2px solid white;
+    position: relative;
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
+
+
+.social {
+    position: relative;
+    top: -5px;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer
+}
+
+.fa-facebook-square:hover {
+    color: #3B579D
+}
+
+.fa-google-square:hover {
+    color: #3B579D
+}
+
+.fa-linkedin:hover {
+    color: #007BB6
+}
+
+.fa-twitter-square:hover {
+    color: #2CAAE1
+}
+
+
+
+.material-icons {
+    position: relative;
+    top: 3px
+}
+
+
+
