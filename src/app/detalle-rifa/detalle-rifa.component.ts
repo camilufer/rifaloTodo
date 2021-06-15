@@ -12,4 +12,12 @@ export class DetalleRifaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toggle = true;
+status = 'Enable'; 
+
+enableDisableRule() {
+    this.toggle = !this.toggle;
+    this.status = this.toggle ? 'Enable' : 'Disable';
+}
+ 
 }
