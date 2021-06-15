@@ -26,6 +26,9 @@ import { DetalleRifaComponent } from './detalle-rifa/detalle-rifa.component';
 import { ContactComponent } from './contact/contact.component';
 import { ButtonPaymentComponent } from './button-payment/button-payment.component';
 import { MoneyWithdrawalComponent } from './money-withdrawal/money-withdrawal.component';
+import { AccountStatementComponent } from './account-statement/account-statement.component';
+import { EditAccountComponent } from './edit-account/edit-account.component';
+import { MyRafflesComponent } from './my-raffles/my-raffles.component';
 
 
 
@@ -64,6 +67,18 @@ const appRoute:Route[]=[
     component:MoneyWithdrawalComponent
   },
   {
+    path:'account-statement',
+    component:AccountStatementComponent
+  },
+  {
+    path:'edit-account',
+    component:EditAccountComponent
+  },
+  {
+    path:'my-raffles',
+    component:MyRafflesComponent
+  },
+  {
     path:'',
     redirectTo: 'home',
     pathMatch: 'full'
@@ -86,7 +101,10 @@ const appRoute:Route[]=[
     DetalleRifaComponent,
     ContactComponent,
     ButtonPaymentComponent,
-    MoneyWithdrawalComponent
+    MoneyWithdrawalComponent,
+    AccountStatementComponent,
+    EditAccountComponent,
+    MyRafflesComponent
   ],
   imports: [
     BrowserModule,
