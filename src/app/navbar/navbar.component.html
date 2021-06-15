@@ -30,25 +30,24 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="collapseExample" [ngbCollapse]="isCollapsed">
-			<li class="nav-item dropdown">
-				<button class="nav-link dropdown-toggle textNavBar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			<li class="nav-item2 dropdown">
+				<button class="nav-link dropdown-toggle btn btn-warning" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					$12000
 				</button>
 				
 				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 				  <li><a class="dropdown-item" href="#"><i class="fas fa-sync-alt"></i> Refrescar Saldo</a></li>
 				  <li><hr class="dropdown-divider"></li>
-				  <li><a class="dropdown-item" href="#"><i class="fas fa-plus"></i> Agregar dinero</a></li>
-				  <li><a class="dropdown-item" href="#"><i class="fas fa-money-bill-alt"></i> Retirar dinero</a></li>
+				  <li><a class="dropdown-item" href="button-payment"><i class="fas fa-plus"></i> Agregar dinero</a></li>
+				  <li><a class="dropdown-item" href="money-withdrawal"><i class="fas fa-money-bill-alt"></i> Retirar dinero</a></li>
 				  <li><a class="dropdown-item" href="#"><i class="fas fa-gift"></i> Canjear Código</a></li>
 				  <li><a class="dropdown-item" href="#"><i class="fas fa-list-alt"></i> Ver Estado Cuenta</a></li>
 				</ul>
 			</li>
+			<li class="alert nav-item">
+				<i class="fas fa-bell"></i>
+			</li>
 			<ul class="navbar-nav me-auto">
-				
-				<li class="nav-item">
-					<i class="fas fa-bell"></i>
-				</li>
 				<li class="nav-item">
 					<a class="nav-link active textNavBar" aria-current="page" routerLink="/home">Inicio</a>
 				</li>
@@ -61,7 +60,7 @@
 			</ul>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle textNavBar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					<i class="fas fa-smile"></i>
+					<i class="fas fa-smile nav-item2 yellow"></i>
 					Cuenta
 				</a>
 				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">

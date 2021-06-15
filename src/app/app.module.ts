@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {RouterModule, Router, Route} from '@angular/router';
 
-import { HomeComponent } from '../home/home.component';
+import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -23,6 +23,9 @@ import { environment } from '../environments/environment';
 import { DataDbService } from './services/data-db.service';
 import { SinginComponent } from './singin/singin.component';
 import { DetalleRifaComponent } from './detalle-rifa/detalle-rifa.component';
+import { ContactComponent } from './contact/contact.component';
+import { ButtonPaymentComponent } from './button-payment/button-payment.component';
+import { MoneyWithdrawalComponent } from './money-withdrawal/money-withdrawal.component';
 
 
 
@@ -53,6 +56,14 @@ const appRoute:Route[]=[
     component:DetalleRifaComponent
   },
   {
+    path:'button-payment',
+    component:ButtonPaymentComponent
+  },
+  {
+    path:'money-withdrawal',
+    component:MoneyWithdrawalComponent
+  },
+  {
     path:'',
     redirectTo: 'home',
     pathMatch: 'full'
@@ -72,7 +83,10 @@ const appRoute:Route[]=[
     FooterComponent,
     PreguntasComponent,
     SinginComponent,
-    DetalleRifaComponent
+    DetalleRifaComponent,
+    ContactComponent,
+    ButtonPaymentComponent,
+    MoneyWithdrawalComponent
   ],
   imports: [
     BrowserModule,
