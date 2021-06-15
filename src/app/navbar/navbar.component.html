@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg  navbarColor navbar-light sticky-top">
+<nav *ngIf="!showNavbar" class="navbar navbar-expand-lg  navbarColor navbar-light sticky-top">
     <div class="container">
 		<a class="navbar-brand" href="#"><img class="logo" src="./assets/img/logo.png" alt=""></a>
 		<button class="navbar-toggler bg-light" type="button"  (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"  aria-expanded="false" aria-label="Toggle navigation">
@@ -7,7 +7,7 @@
 		<div class="collapse navbar-collapse" id="collapseExample" [ngbCollapse]="isCollapsed">
 			<ul class="navbar-nav me-auto">
 				<li class="nav-item">
-					<a class="nav-link active textNavBar" aria-current="page" routerLink="/home">Home</a>
+					<a class="nav-link active textNavBar" aria-current="page" routerLink="/home">Inicio</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link active textNavBar" aria-current="page" routerLink="/about">Sobre nosotros</a>
@@ -19,6 +19,58 @@
 			<form >
 				<button class="btn btn-outline-success textNavBar" type="submit" routerLink="/login">Ingresar</button>
 			</form>
+		</div>	
+    </div>
+</nav>
+
+<nav *ngIf="showNavbar" class="navbar navbarClient navbar-expand-lg  navbarColor navbar-dark sticky-top">
+    <div class="container">
+		<a class="navbar-brand" href="#"><img class="logo" src="./assets/img/logo.png" alt=""></a>
+		<button class="navbar-toggler btnSaldo" type="button"  (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"  aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapseExample" [ngbCollapse]="isCollapsed">
+			<li class="nav-item dropdown">
+				<button class="nav-link dropdown-toggle textNavBar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					$12000
+				</button>
+				
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <li><a class="dropdown-item" href="#"><i class="fas fa-sync-alt"></i> Refrescar Saldo</a></li>
+				  <li><hr class="dropdown-divider"></li>
+				  <li><a class="dropdown-item" href="#"><i class="fas fa-plus"></i> Agregar dinero</a></li>
+				  <li><a class="dropdown-item" href="#"><i class="fas fa-money-bill-alt"></i> Retirar dinero</a></li>
+				  <li><a class="dropdown-item" href="#"><i class="fas fa-gift"></i> Canjear Código</a></li>
+				  <li><a class="dropdown-item" href="#"><i class="fas fa-list-alt"></i> Ver Estado Cuenta</a></li>
+				</ul>
+			</li>
+			<ul class="navbar-nav me-auto">
+				
+				<li class="nav-item">
+					<i class="fas fa-bell"></i>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active textNavBar" aria-current="page" routerLink="/home">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active textNavBar" aria-current="page" routerLink="/about">Sobre nosotros</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active textNavBar" aria-current="page" routerLink="/preguntas">Preguntas frecuentes</a>
+				</li>
+			</ul>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle textNavBar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<i class="fas fa-smile"></i>
+					Cuenta
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <li><a class="dropdown-item" href="#">Editar Datos</a></li>
+				  <li><a class="dropdown-item" href="#">Ver mis Rifas</a></li>
+				  <li><hr class="dropdown-divider"></li>
+				  <li><a class="dropdown-item" href="#">Salir</a></li>
+				</ul>
+			</li>
 		</div>	
     </div>
 </nav>

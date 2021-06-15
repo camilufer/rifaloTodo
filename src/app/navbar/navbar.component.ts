@@ -1,4 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
+import{ ServiceUserLogService} from '../service-user-log.service'
 
 
 @Component({
@@ -7,17 +8,27 @@ import { Component, OnInit, Output } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  
+  showNavbar: boolean = true ;
   
   public isCollapsed = true;
 
-  constructor() { }
+  constructor( private UserLogService: ServiceUserLogService) { }
 
   ngOnInit(): void {
+   
+    this.UserLogService.disparadorDeFavoritos.subscribe(data =>{
+      this.showNavbar = !this.showNavbar;
+      console.log('recibiendo data', data);
+    } )
+
+   
   }
- 
 
   
+
+ 
+
+
 
 
  

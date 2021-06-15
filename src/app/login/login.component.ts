@@ -3,6 +3,7 @@ import { DataDbService } from '../services/data-db.service';
 import { FormControl, FormGroup } from '@angular/forms';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { Output } from '@angular/core';
+import{ ServiceUserLogService} from '../service-user-log.service'
 
 
 @Component({
@@ -12,6 +13,8 @@ import { Output } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  public estaLog: boolean = false;
+
   createFormGroup(){
     return new FormGroup({
       email: new FormControl(''),
@@ -20,11 +23,15 @@ export class LoginComponent implements OnInit {
     });
   }
   contactForm: FormGroup;
-  constructor(private dbData: DataDbService) {
+  constructor(
+    private dbData: DataDbService,
+    private UserLogService: ServiceUserLogService
+    ) {
     this.contactForm = this.createFormGroup();
    }
 
   ngOnInit(): void {
+    this.estaLog = false;
   }
 
   onResetForm(){
@@ -37,6 +44,13 @@ export class LoginComponent implements OnInit {
     
   }
 
- 
+ agregarFavorito(){
+   
+   this.estaLog = true;
+   console.log("hola");
+   this.UserLogService.disparadorDeFavoritos.emit({
+    data:this.estaLog
+   })
+ }
 
 }
