@@ -2,12 +2,12 @@
 	<div class="row">
 		<div class="col-10 offset-1">
 			<ngb-carousel>
-				<ng-template *ngFor="let pelicula of peliculas" ngbSlide>
+				<ng-template *ngFor="let imagen of imagenes" ngbSlide>
 					<div class="contenedor-img picsum-img-wrapper">
-						<img class="center-block imgCarousel" src="{{pelicula.img}}" alt="Random first slide">
+						<img class="center-block imgCarousel" src="{{imagen.img}}" alt="Random first slide">
 					</div>
 					<div class="carousel-caption">
-						<h3>{{pelicula.name}}</h3>
+						<h3>{{imagen.name}}</h3>
 					</div>
 				</ng-template>
 			</ngb-carousel>
