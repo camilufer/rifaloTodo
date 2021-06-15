@@ -14,12 +14,12 @@ export class CarouselComponent implements OnInit {
     }, 
     {
       name:'',
-      img:'./assets/img/imgSlider7.jpg',
+      img:'./assets/img/imgSlider6.jpg',
       desc:''
     },
     {
       name:'',
-      img:'./assets/img/imgSlider6.jpg',
+      img:'./assets/img/imgSlider7.jpg',
       desc:''
     }
   ];

@@ -14,7 +14,6 @@ import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CardComponent } from './card/card.component';
-import { DetalleComponent } from './detalle/detalle.component';
 import { FooterComponent } from './footer/footer.component';
 import { PreguntasComponent } from './preguntas/preguntas.component';
 import { AngularFireModule } from '@angular/fire';
@@ -94,7 +93,6 @@ const appRoute:Route[]=[
     NavbarComponent,
     CarouselComponent,
     CardComponent,
-    DetalleComponent,
     FooterComponent,
     PreguntasComponent,
     SinginComponent,
