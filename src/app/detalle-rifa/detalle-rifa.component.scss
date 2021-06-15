@@ -1,0 +1,20 @@
+h1, h2, h3, h4, h5, .grid{
+    color: #fff;
+}
+.grid .col-3{
+    background-color: #FFCA2C;
+    color: #fff;
+    border-radius: 10px;
+    border: #000 1px solid;
+}
+.grid .col-3:hover{
+    background-color: #d7a200;
+}
+i{
+    font-size: 60px;
+    color: #FFCA2C;
+    margin: 0 5px;
+}
+i:hover{
+    color: #d7a200;
+}
