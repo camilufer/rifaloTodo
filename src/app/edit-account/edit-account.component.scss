@@ -1,6 +1,4 @@
-.container{
-    width: 500px !important;
-}
+
 .img{
     width: 100px;
 }
@@ -11,7 +9,6 @@ input{
 
 .bg{
     background:rgba(0, 0, 0, 0.6);
-    padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
@@ -19,3 +16,12 @@ input{
 .form-label{
     color: #fff;
 }
+
+.btnFile{
+    width: 100%;
+}
+
+
+.m-top{
+    margin-top: 40px;
+    }
