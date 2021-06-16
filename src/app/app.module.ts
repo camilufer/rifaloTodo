@@ -28,6 +28,7 @@ import { MoneyWithdrawalComponent } from './money-withdrawal/money-withdrawal.co
 import { AccountStatementComponent } from './account-statement/account-statement.component';
 import { EditAccountComponent } from './edit-account/edit-account.component';
 import { MyRafflesComponent } from './my-raffles/my-raffles.component';
+import { CreateComponent } from './create/create.component';
 
 
 
@@ -75,7 +76,11 @@ const appRoute:Route[]=[
   },
   {
     path:'my-raffles',
-    component:MyRafflesComponent
+    component:MyRafflesComponent 
+  },
+  {
+    path:'create',
+    component:CreateComponent 
   },
   {
     path:'',
@@ -102,7 +107,8 @@ const appRoute:Route[]=[
     MoneyWithdrawalComponent,
     AccountStatementComponent,
     EditAccountComponent,
-    MyRafflesComponent
+    MyRafflesComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
