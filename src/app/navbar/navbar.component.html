@@ -1,4 +1,4 @@
-<nav *ngIf="!showNavbar" class="navbar navbar-expand-lg  navbarColor navbar-light sticky-top">
+<!--<nav *ngIf="!showNavbar" class="navbar navbar-expand-lg  navbarColor navbar-light sticky-top">
     <div class="container">
 		<a class="navbar-brand" href="#"><img class="logo" src="./assets/img/logo.png" alt=""></a>
 		<button class="navbar-toggler bg-light" type="button"  (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"  aria-expanded="false" aria-label="Toggle navigation">
@@ -22,8 +22,9 @@
 		</div>	
     </div>
 </nav>
+-->
 
-<nav *ngIf="showNavbar" class="navbar navbarClient navbar-expand-lg  navbarColor navbar-dark sticky-top">
+<nav  class="navbar navbarClient navbar-expand-lg  navbar-light bg-light sticky-top">
     <div class="container">
 		<a class="navbar-brand" href="#"><img class="logo" src="./assets/img/logo.png" alt=""></a>
 		<button class="navbar-toggler btnSaldo" type="button"  (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"  aria-expanded="false" aria-label="Toggle navigation">
@@ -75,6 +76,47 @@
     </div>
 </nav>
 
+
+    <div class="container">
+		<div class="row justify-content-center">
+			<div class="borde-a col-2">
+				<div>
+					<div class="change-icon">
+						<i class="nav-link fas fa-door-closed"></i>
+						<i class="nav-link fas fa-door-open"></i>
+					</div>
+					<a class="nav-link text" aria-current="page" routerLink="/home">Inicio</a>
+				</div>
+			</div>
+			<div class="borde-b col-2">
+				<div>
+					<div>
+						<i class="nav-link fas fa-plus"></i>
+						<i class="nav-link fas fa-times"></i>
+					</div>
+					<a class="nav-link text" aria-current="page" routerLink="/create">Crear</a>
+				</div>
+			</div>
+			<div class="borde-c col-2">
+				<div>
+					<div class="change-icon">
+						<i class="nav-link fas fa-flushed"></i>
+						<i class="nav-link fas fa-smile-wink"></i>
+					</div>
+					<a class="nav-link text" aria-current="page" routerLink="/about">Sobre nosotros</a>
+				</div>
+			</div>
+			<div class="borde-d col-2">
+				<div>
+					<div>
+						<i class="nav-link fas fa-question"></i>
+						<i class="nav-link fas fa-comment-dots"></i>
+					</div>
+					<a class="nav-link text" aria-current="page" routerLink="/preguntas">Preguntas frecuentes</a>
+				</div>
+			</div>
+		</div>	
+    </div>
 
 
 
