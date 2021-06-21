@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataDbService } from '../services/data-db.service';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { Output } from '@angular/core';
 import{ ServiceUserLogService} from '../service-user-log.service'
@@ -13,34 +13,45 @@ import{ ServiceUserLogService} from '../service-user-log.service'
 })
 export class LoginComponent implements OnInit {
 
+  public contactForm: FormGroup;
   public estaLog: boolean = false;
+  private emailPattern: any = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  
+  constructor(private dbData: DataDbService,
+              private UserLogService: ServiceUserLogService) {
+    this.contactForm = this.createFormGroup();
+   }
+
+  get name() { return this.contactForm.get('name'); }
+  get email() { return this.contactForm.get('email'); }
+  get password() { return this.contactForm.get('password'); }
 
   createFormGroup(){
     return new FormGroup({
-      email: new FormControl(''),
-      name: new FormControl(''),
-      password: new FormControl('')
+      email: new FormControl('',[Validators.required, Validators.minLength(100), Validators.pattern(this.emailPattern)]),
+      name: new FormControl('',[Validators.required, Validators.minLength(100)]),
+      password: new FormControl('',[Validators.required, Validators.minLength(8)])
     });
   }
-  contactForm: FormGroup;
-  constructor(
-    private dbData: DataDbService,
-    private UserLogService: ServiceUserLogService
-    ) {
-    this.contactForm = this.createFormGroup();
-   }
+  
+ 
 
   ngOnInit(): void {
     this.estaLog = false;
   }
 
-  onResetForm(){
+  onResetForm(): void{
     this.contactForm.reset();
   }
 
-  onSaveForm(){
-    console.log('Saved');
-    this.dbData.saveMessage(this.contactForm.value);
+  onSaveForm(): void{
+    if(this.contactForm.valid){
+      this.dbData.saveMessage(this.contactForm.value);
+      this.onResetForm()
+      console.log('valid');
+    } else{
+      console.log('not valid');
+    }
     
   }
 

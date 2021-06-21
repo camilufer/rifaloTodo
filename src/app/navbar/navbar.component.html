@@ -1,118 +1,84 @@
-<!--<nav *ngIf="!showNavbar" class="navbar navbar-expand-lg  navbarColor navbar-light sticky-top">
+<nav  class="navbar navbarClient navbar-expand-lg  navbar-light bg-light ">
     <div class="container">
-		<a class="navbar-brand" href="#"><img class="logo" src="./assets/img/logo.png" alt=""></a>
-		<button class="navbar-toggler bg-light" type="button"  (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"  aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="collapseExample" [ngbCollapse]="isCollapsed">
-			<ul class="navbar-nav me-auto">
-				<li class="nav-item">
-					<a class="nav-link active textNavBar" aria-current="page" routerLink="/home">Inicio</a>
+		<div class="col">
+			<a class="navbar-brand" href="#"><img class="logo" src="./assets/img/logo.png" alt=""></a>
+		</div>
+		<div class="col-md-auto">
+			<button class="navbar-toggler btnSaldo" type="button"  (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"  aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapseExample" [ngbCollapse]="isCollapsed">
+				<li class="nav-item2 dropdown">
+					<button class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						$12000
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="#"><i class="fas fa-sync-alt"></i> Refrescar Saldo</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="button-payment"><i class="fas fa-plus"></i> Agregar dinero</a></li>
+					<li><a class="dropdown-item" href="money-withdrawal"><i class="fas fa-money-bill-alt"></i> Retirar dinero</a></li>
+					<li><a class="dropdown-item" href="account-statement"><i class="fas fa-list-alt"></i> Ver Estado Cuenta</a></li>
+					</ul>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link active textNavBar" aria-current="page" routerLink="/about">Sobre nosotros</a>
+			</div>	
+		</div>
+		<div class="col-md-auto">
+			<button class="navbar-toggler btnSaldo" type="button"  (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"  aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapseExample" [ngbCollapse]="isCollapsed">
+				<li class="nav-item dropdown">
+					<button class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Cuenta
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <li><a class="dropdown-item" href="edit-account"><i class="fas fa-edit"></i> Editar Datos</a></li>
+					  <li><a class="dropdown-item" href="my-raffles"><i class="fas fa-eye"></i> Ver mis Rifas</a></li>
+					  <li><hr class="dropdown-divider"></li>
+					  <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Salir</a></li>
+					</ul>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link active textNavBar" aria-current="page" routerLink="/preguntas">Preguntas Frecuentes</a>
-				</li>
-			</ul>
-			<form >
-				<button class="btn btn-outline-success textNavBar" type="submit" routerLink="/login">Ingresar</button>
-			</form>
-		</div>	
-    </div>
-</nav>
--->
-
-<nav  class="navbar navbarClient navbar-expand-lg  navbar-light bg-light sticky-top">
-    <div class="container">
-		<a class="navbar-brand" href="#"><img class="logo" src="./assets/img/logo.png" alt=""></a>
-		<button class="navbar-toggler btnSaldo" type="button"  (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"  aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="collapseExample" [ngbCollapse]="isCollapsed">
-			<li class="nav-item2 dropdown">
-				<button class="nav-link dropdown-toggle btn btn-warning" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					$12000
-				</button>
-				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-				  <li><a class="dropdown-item" href="#"><i class="fas fa-sync-alt"></i> Refrescar Saldo</a></li>
-				  <li><hr class="dropdown-divider"></li>
-				  <li><a class="dropdown-item" href="button-payment"><i class="fas fa-plus"></i> Agregar dinero</a></li>
-				  <li><a class="dropdown-item" href="money-withdrawal"><i class="fas fa-money-bill-alt"></i> Retirar dinero</a></li>
-				  <li><a class="dropdown-item" href="account-statement"><i class="fas fa-list-alt"></i> Ver Estado Cuenta</a></li>
-				</ul>
-			</li>
-			<li class="alert nav-item">
-				<i class="fas fa-bell"></i>
-			</li>
-			<ul class="navbar-nav me-auto">
-				<li class="nav-item">
-					<a class="nav-link active textNavBar" aria-current="page" routerLink="/home">Inicio</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active textNavBar" aria-current="page" routerLink="/create">Crear</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active textNavBar" aria-current="page" routerLink="/about">Sobre nosotros</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active textNavBar" aria-current="page" routerLink="/preguntas">Preguntas frecuentes</a>
-				</li>
-			</ul>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle textNavBar icSmile" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					<i class="fas fa-smile nav-item2 yellow"></i>
-					Cuenta
-				</a>
-				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-				  <li><a class="dropdown-item" href="edit-account"><i class="fas fa-edit"></i> Editar Datos</a></li>
-				  <li><a class="dropdown-item" href="my-raffles"><i class="fas fa-eye"></i> Ver mis Rifas</a></li>
-				  <li><hr class="dropdown-divider"></li>
-				  <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Salir</a></li>
-				</ul>
-			</li>
-		</div>	
+			</div>	
+		</div>
+		
     </div>
 </nav>
 
 
-    <div class="container">
+    <div class="container-fluid sticky-top">
 		<div class="row justify-content-center">
-			<div class="borde-a col-2">
+			<div class="borde-a col-2" routerLink="/home">
 				<div>
 					<div class="change-icon">
-						<i class="nav-link fas fa-door-closed"></i>
-						<i class="nav-link fas fa-door-open"></i>
+						<i class="fasmenu2 nav-link fas fa-door-closed"></i>
+						<i class="fasmenu2 nav-link fas fa-door-open"></i>
 					</div>
-					<a class="nav-link text" aria-current="page" routerLink="/home">Inicio</a>
+					<a class="nav-link active text" aria-current="page" >Inicio</a>
 				</div>
 			</div>
-			<div class="borde-b col-2">
-				<div>
-					<div>
-						<i class="nav-link fas fa-plus"></i>
-						<i class="nav-link fas fa-times"></i>
-					</div>
-					<a class="nav-link text" aria-current="page" routerLink="/create">Crear</a>
-				</div>
-			</div>
-			<div class="borde-c col-2">
+			<div class="borde-b col-2" routerLink="/create">
 				<div>
 					<div class="change-icon">
-						<i class="nav-link fas fa-flushed"></i>
-						<i class="nav-link fas fa-smile-wink"></i>
+						<i class="fasmenu2 nav-link fas fa-plus"></i>
+						<i class="fasmenu2 nav-link fas fa-times"></i>
 					</div>
-					<a class="nav-link text" aria-current="page" routerLink="/about">Sobre nosotros</a>
+					<a class="nav-link active text" aria-current="page" >Crear</a>
 				</div>
 			</div>
-			<div class="borde-d col-2">
-				<div>
-					<div>
-						<i class="nav-link fas fa-question"></i>
-						<i class="nav-link fas fa-comment-dots"></i>
+			<div class="borde-c col-2" routerLink="/about">
+				<div >
+					<div class="change-icon">
+						<i class="fasmenu2 nav-link fas fa-flushed"></i>
+						<i class="fasmenu2 nav-link fas fa-smile-wink"></i>
 					</div>
-					<a class="nav-link text" aria-current="page" routerLink="/preguntas">Preguntas frecuentes</a>
+					<a class="nav-link active text" aria-current="page" >Sobre nosotros</a>
+				</div>
+			</div>
+			<div class="borde-d col-2" routerLink="/preguntas">
+				<div class="change-icon">
+					<i class="fasmenu2 nav-link fas fa-question"></i>
+					<i class="fasmenu2 nav-link fas fa-comment-dots"></i>
+					<a class="nav-link active text" aria-current="page" >Preguntas frecuentes</a>
 				</div>
 			</div>
 		</div>	

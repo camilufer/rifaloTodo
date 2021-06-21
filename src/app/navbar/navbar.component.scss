@@ -3,11 +3,6 @@
    
 }
 
-.textNavBar{
-    color: #919191 !important;
-    font-size: 20px;
-}
-
 
 .btnSaldo{
     background-color: #FFC312;
@@ -42,6 +37,13 @@ li{
 
 .icSmile{
     padding-left: 0px;
+}
+
+.text{
+    color:#919191;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
 }
 
 
@@ -126,8 +128,9 @@ li{
     }
 }
 
-.borde-d div:hover{
+.borde-d:hover{
     background-color: #30A7D7;
+
     i,a{color: #fff;
     }
     .fa-comment-dots{
@@ -138,15 +141,8 @@ li{
     }
 }
 
-.text{
-    color:#919191;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 18px;
-}
 
-
-i{
+.fasmenu2{
     color:#919191;
     text-align: center;
     font-weight: bolder;
@@ -156,4 +152,20 @@ i{
 
 a{
     padding-top: 2px;
+    color:#919191;
+}
+
+.btn{
+    background-color: #E3350D;
+    color: #fff;
+}
+
+.sticky-top{
+    z-index: 1;
+    background: rgb(248,249,250);
+    background: linear-gradient(90deg, rgba(248,249,250,1) 100%, rgba(252,253,253,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%);
+}
+
+.navbarDropdown{
+    z-index: 9999;
 }
