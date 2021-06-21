@@ -75,10 +75,10 @@ li{
     padding: 0;
     border-bottom: 4px solid  #E6B62F;
     .fa-times{
-        display: none;
+        display: block;
     }
     div .fa-plus{
-        display: block;
+        display: none;
     }
 }
 
@@ -87,10 +87,10 @@ li{
     i,a{color: #fff;
     }
     .fa-times{
-        display: block;
+        display: none;
     }
     div .fa-plus{
-        display: none;
+        display: block;
     }
 }
 
@@ -161,7 +161,7 @@ a{
 }
 
 .sticky-top{
-    z-index: 1;
+    z-index: 999;
     background: rgb(248,249,250);
     background: linear-gradient(90deg, rgba(248,249,250,1) 100%, rgba(252,253,253,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%);
 }
