@@ -1,64 +1,78 @@
-
-a{
+a {
     color: black !important;
 }
 
-.m-top{
-margin-top: 30px;
+.m-top {
+    margin-top: 30px;
 }
 
-.mt-5{
+.mt-5 {
     padding: 20px;
 }
 
-.title{
+.title {
     margin-top: 10px;
     font-size: 40px;
     font-weight: bolder;
 }
 
-.bR{
+.bR {
     border-radius: 10px;
 }
 
-.form-label{
+.form-label {
     margin-top: 10px;
 }
 
-.addImg{
+.addImg {
     width: 100%;
 }
 
-.btnCont{
+.btnCont {
     padding: 10px 80px;
-    color: #fff ;
-    font-weight: bold ;
+    color: #000;
+    font-weight: bold;
     margin-bottom: 30px;
-    button{
+    button {
         margin-bottom: 10px;
     }
 }
 
-.content{
+.content {
     margin-bottom: 30px;
 }
 
-.lblNumber{
+.lblNumber {
     margin-right: 5px;
 }
 
-.cantNum{
+.cantNum {
     margin-top: 20px;
 }
 
-.m-left{
+.m-left {
     padding-left: 10px;
 }
 
-.m-top-txt{
-    margin-top:15px;
+.m-top-txt {
+    margin-top: 15px;
 }
 
-.contMonto{
+.contMonto {
     margin-top: 20px;
+}
+
+.m-bottom {
+    margin-bottom: 20px
+}
+
+.txt-black,
+h2,
+h1 {
+    color: #000;
+}
+
+.preguntasBg {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }

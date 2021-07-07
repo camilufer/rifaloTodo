@@ -1,5 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
-import{ ServiceUserLogService} from '../service-user-log.service'
+import{ ServiceUserLogService} from '../services/service-user-log.service'
 
 
 @Component({

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "rifalo-todo-64fe0": {
+      "hosting": {
+        "rifalo-todo": [
+          "rifalo-todo-64fe0"
+        ]
+      }
+    }
+  }
+}

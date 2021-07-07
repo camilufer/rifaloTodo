@@ -7,6 +7,8 @@ export class ServiceUserLogService {
 @Output() disparadorDeFavoritos: EventEmitter<any> = new EventEmitter();
   constructor() { }
 
+
+ 
 }
 
 

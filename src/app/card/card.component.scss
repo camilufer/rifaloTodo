@@ -75,18 +75,7 @@
   }
   
   
-  .card::before {
-    background-image: var(--gradient-1);
-    border-radius: 15px;
-    box-shadow: 2px 0px 20px rgba(0, 0, 0, .1);
-    bottom: 70px;
-    content: '';
-    left: -35px;
-    position: absolute;
-    right: 35px;
-    top: 0;
-    
-  }
+  
   
   .card {
     position: relative;
@@ -94,6 +83,7 @@
     padding-top: 50px;
     border: none;
     background-color: transparent;
+    margin-bottom: 40px;
   }
   
   .card__block--main {
@@ -197,7 +187,7 @@
   }
   
   .like svg {
-    fill: #fff;
+    fill: #000;
     height: 25px;
     width: 25px;
   }

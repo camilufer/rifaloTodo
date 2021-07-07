@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {RouterModule, Router, Route} from '@angular/router';
@@ -29,6 +28,8 @@ import { AccountStatementComponent } from './account-statement/account-statement
 import { EditAccountComponent } from './edit-account/edit-account.component';
 import { MyRafflesComponent } from './my-raffles/my-raffles.component';
 import { CreateComponent } from './create/create.component';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AccessComponent } from './access/access.component';
 
 
 
@@ -83,6 +84,10 @@ const appRoute:Route[]=[
     component:CreateComponent 
   },
   {
+    path:'access',
+    component:AccessComponent 
+  },
+  {
     path:'',
     redirectTo: 'home',
     pathMatch: 'full'
@@ -108,7 +113,8 @@ const appRoute:Route[]=[
     AccountStatementComponent,
     EditAccountComponent,
     MyRafflesComponent,
-    CreateComponent
+    CreateComponent,
+    AccessComponent
   ],
   imports: [
     BrowserModule,
@@ -117,8 +123,9 @@ const appRoute:Route[]=[
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(appRoute)
-  ],
+    RouterModule.forRoot(appRoute),
+    AngularFireAuthModule
+   ],
   providers: [DataDbService],
   bootstrap: [AppComponent]
 })

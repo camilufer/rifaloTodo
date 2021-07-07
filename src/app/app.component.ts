@@ -1,5 +1,6 @@
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
-import { Component, Output } from '@angular/core';
+import { Component, Output, OnInit } from '@angular/core';
+import { ngbCarouselTransitionOut } from '@ng-bootstrap/ng-bootstrap/carousel/carousel-transition';
 
 
 @Component({
@@ -9,5 +10,8 @@ import { Component, Output } from '@angular/core';
 })
 export class AppComponent {
   title = 'rifalo-todo';
- 
+ isSingedIn = false;
+ constructor(){}
+   
+
 }
